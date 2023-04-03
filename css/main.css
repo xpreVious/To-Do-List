@@ -18,7 +18,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.fas {
+.fas,
+.fa-solid {
   pointer-events: none;
 }
 
