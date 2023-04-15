@@ -38,7 +38,7 @@ const prepareDOMEvents = () => {
 };
 
 const addNewTask = () => {
-	if (todoInput.value !== "") {
+	if (todoInput.value !== "" && todoInput.value.trim()) {
 		newTodo = document.createElement("li");
 		newTodo.textContent = todoInput.value;
 		ulList.append(newTodo);
@@ -47,6 +47,7 @@ const addNewTask = () => {
 		errorInfo.textContent = "";
 	} else {
 		errorInfo.textContent = "Wpisz treść zadania!";
+		todoInput.value = "";
 	}
 };
 
