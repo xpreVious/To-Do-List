@@ -38,7 +38,7 @@ const prepareDOMEvents = () => {
 };
 
 const addNewTask = () => {
-	if (todoInput.value !== "" && todoInput.value.trim()) {
+	if (todoInput.value.trim() !== "") {
 		newTodo = document.createElement("li");
 		newTodo.textContent = todoInput.value;
 		ulList.append(newTodo);
@@ -76,7 +76,7 @@ const checkClick = (e) => {
 	} else if (e.target.matches(".edit")) {
 		editTodo(e);
 	} else if (e.target.matches(".delete")) {
-		deleteTodo(e);
+		deleteTodo(e);[]
 		closePopup();
 	}
 };
